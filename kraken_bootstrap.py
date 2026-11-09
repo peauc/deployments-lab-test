@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow.providers.docker.operators.docker import DockerOperator
 from airflow.sdk import DAG
 
-IMAGE = "kraken-bootstrap:lab3-test"
+IMAGE = "ghcr.io/peauc/kraken-bootstrap-lab-test:e464a52c1b225f6e9f62e2ae689d8db246babc55"
 
 with DAG(
     dag_id="kraken_bootstrap",
